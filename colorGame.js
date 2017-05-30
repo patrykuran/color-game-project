@@ -8,6 +8,7 @@ var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
 var modeButtons = document.querySelectorAll(".mode");
 
+var squaresColors = [];
 
 init();
 
@@ -32,8 +33,9 @@ function setupModeButtons() {
 function setupSquares() {
 	for(var i = 0; i < squares.length; i++) {
 		squares[i].addEventListener("click", function() {
-			var clickedColor = this.style.background;
+			var clickedColor = squaresColors[this.getAttribute('data-index')];
 			console.log(clickedColor + "wybrany kolor to: " + pickedColor)
+
 			if(clickedColor === pickedColor){
 				messageDisplay.textContent = "Correct!";
 				resetButton.textContent = "Play Again?";
@@ -57,6 +59,8 @@ function reset() {
 		if(colors[i]){
 			squares[i].style.display = "block";
 			squares[i].style.background = colors[i];
+			squaresColors[i] = colors[i];
+			squares[i].setAttribute('data-index', i);
 		} else {
 			squares[i].style.display = "none";
 		}
