@@ -11,3 +11,5 @@ Try it! ---> https://trykpa.github.io/color-game-project/
 ------------------------------------------------------------------------
 
 I've done this easy game while taking course in Front-End Development. It was one of a "code along" assignments included in the video bootcamp. I've been using HTML, CSS and some JavaScript to make it work.
+
+![screenshot-1](https://drive.google.com/open?id=0B_sNC-GckYUjMExLU0ZXS1hBaWM "Optional Title")
