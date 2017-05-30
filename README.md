@@ -1,12 +1,12 @@
 # Color-Game-project-
 
-GOOGLE CHROME VERSION
-
 This is a project of the Color Game using HTML, CSS and some JavaScript.
 
 ------------------------------------------------------------------------
 
 Guess what color represents the RGB scale!
+
+Try it! ---> https://trykpa.github.io/color-game-project/
 
 ------------------------------------------------------------------------
 
